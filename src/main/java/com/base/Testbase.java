@@ -39,8 +39,7 @@ public class Testbase {
 		if (browsername.equalsIgnoreCase("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Jakkam Sairam\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-
+					"C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		}

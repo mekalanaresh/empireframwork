@@ -1,7 +1,5 @@
 package com.Utils;
 
-
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -24,10 +22,15 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.base.Testbase;
 
-public class Utils extends Testbase {
+public class Utils1 extends Testbase {
 	  
 	 
-	public Utils(WebDriver driver) throws Throwable {
+	public Utils1() throws Throwable {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Utils1(WebDriver driver) throws Throwable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -152,7 +155,6 @@ return data;
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
    }
-
-	}
-
-
+}
+	
+	
