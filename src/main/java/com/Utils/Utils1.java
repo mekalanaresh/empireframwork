@@ -78,7 +78,7 @@ for(int i=1;i<rownum;i++)
 return data;
 	}**/
 	 public static Object[][] readDataFromExcel(String sheetname) throws IOException {
-		    FileInputStream fis = new FileInputStream("./src/main/java/com/testdata/TestdataEmp.xlsx");
+		    FileInputStream fis = new FileInputStream("./src/main/java/com/Utils/addto inventry.xlsx");
 		    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		    XSSFSheet sheet = workbook.getSheet(sheetname);
 

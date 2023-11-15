@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Utils.Utils;
+import com.Utils.Utils1;
 import com.base.Testbase;
 
 public class HomePage extends Testbase{
@@ -51,21 +51,22 @@ public class HomePage extends Testbase{
     {
     	PageFactory.initElements(driver,this);
     }
-}
-  /**  public  Inventory inventory() throws Throwable
+
+   public  Inventry inventory() throws Throwable
     {
-    	Utils.moveToElement(Inventory);
+    	Utils1.moveToElement(Inventory);
     	AllInventory.click();	 
-		return  new Inventory();
+		return  new Inventry();
     }
-    public   Movestock movestock() throws Throwable
+}
+  /**  public   Movestock movestock() throws Throwable
     {
     	Utils.moveToElement(Inventory);
     	Movestock.click();
 		return new Movestock();
 		 
     }
- 
+
 	public  UserType usertype() throws Throwable {
  
  
