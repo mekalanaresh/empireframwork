@@ -58,7 +58,7 @@ public class HomePage extends Testbase{
     	AllInventory.click();	 
 		return  new Inventry();
     }
-}
+
   /**  public   Movestock movestock() throws Throwable
     {
     	Utils.moveToElement(Inventory);
@@ -74,16 +74,16 @@ public class HomePage extends Testbase{
     	Utils.moveToElement(master);
     	usertype.click();
 		return new UserType();
-	}
+	}**/
  
 	public Holidays holidays() throws Throwable
 	{
-		Utils.moveToElement(master);
+		Utils1.moveToElement(master);
 		holidays.click();
 		return new Holidays();
-		
 	}
-	public void addcustomer()
+	}
+	/**public void addcustomer()
 	{
 		Utils.moveToElement(customer);
 		addcustomer.click();
