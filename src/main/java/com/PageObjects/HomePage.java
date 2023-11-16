@@ -1,5 +1,6 @@
 package com.PageObjects;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,53 +60,54 @@ public class HomePage extends Testbase{
 		return  new Inventry();
     }
 
-  /**  public   Movestock movestock() throws Throwable
+   public   Movestock movestock() throws Throwable
     {
-    	Utils.moveToElement(Inventory);
+    	Utils1.moveToElement(Inventory);
     	Movestock.click();
 		return new Movestock();
 		 
     }
 
-	public  UserType usertype() throws Throwable {
+  public UserType usertype() throws Throwable {
  
  
   
-    	Utils.moveToElement(master);
+    	Utils1.moveToElement(master);
     	usertype.click();
 		return new UserType();
-	}**/
- 
+	} 
+
 	public Holidays holidays() throws Throwable
 	{
 		Utils1.moveToElement(master);
 		holidays.click();
 		return new Holidays();
 	}
-	}
-	/**public void addcustomer()
+	
+	public void addcustomer()
 	{
-		Utils.moveToElement(customer);
+		Utils1.moveToElement(customer);
 		addcustomer.click();
 	}
 	public void editcustomer()
 	{
-		Utils.moveToElement(customer);
+		Utils1.moveToElement(customer);
 		allcustomer.click();
 	}
+
 	public  Location location() throws Throwable
 	{
-		Utils.moveToElement(master);
+		Utils1.moveToElement(master);
 		location.click();
 		return  new Location();
 	}
  
 	public Condition Condition()throws Throwable
 	{
-		Utils.moveToElement(master);
+		Utils1.moveToElement(master);
 		condition.click();
 		return new Condition();
   }
-}**/
+	}
 
 
