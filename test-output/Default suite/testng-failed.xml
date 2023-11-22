@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.InventoryTest">
+      <class name="com.testcases.ConditionTest">
         <methods>
+          <include name="editCondition"/>
+          <include name="deleteCondition"/>
           <include name="setup"/>
-          <include name="addProduct" invocation-numbers="0"/>
+          <include name="verify"/>
+          <include name="addCondition"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testcases.InventoryTest -->
+      </class> <!-- com.testcases.ConditionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
