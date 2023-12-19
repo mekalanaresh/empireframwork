@@ -48,6 +48,12 @@ public class HomePage extends Testbase{
 	//condition
 		@FindBy(xpath="//a[text()='Condition']")
 		WebElement condition;
+		//shifts
+				@FindBy(linkText="Shifts")
+				WebElement shifts;
+		   //company
+				@FindBy(linkText="Company")
+				WebElement company;
     public HomePage(WebDriver driver)throws Throwable
     {
     	PageFactory.initElements(driver,this);
@@ -107,7 +113,17 @@ public class HomePage extends Testbase{
 		Utils1.moveToElement(master);
 		condition.click();
 		return new Condition();
-  }
 	}
-
-
+	public Shifts Shifts() throws Throwable
+	{
+		Utils1.moveToElement(master);
+		shifts.click();
+		return new Shifts();
+	}
+	public Company company() throws Throwable
+	{
+		Utils1.moveToElement(master);
+		company.click();
+		return new Company();
+  }
+  }

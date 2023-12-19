@@ -14,6 +14,7 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +26,11 @@ import com.base.Testbase;
 public class Utils1 extends Testbase {
 	  
 	 
+	public class click extends Exception {
+
+	}
+
+	public static Object moveToE;
 	public Utils1() throws Throwable {
 		super();
 		// TODO Auto-generated constructor stub
@@ -154,7 +160,22 @@ return data;
 		r.keyRelease(KeyEvent.VK_V);
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
-   }
+ 
+	
 }
+
+   public static void scroll(int x,int y) {
+	    JavascriptExecutor jse = (JavascriptExecutor) driver;
+	    jse.executeScript("window.scrollBy("+x+","+y+")");
+	}
+  public static void javaScriptClick(WebElement wb)
+  {
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		 jse.executeScript("arguments[0].click()",wb);
+	}
+  
+	
+}
+
 	
 	
