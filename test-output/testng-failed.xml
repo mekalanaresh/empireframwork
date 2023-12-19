@@ -5,7 +5,6 @@
     <classes>
       <class name="com.testcases.ShiftTest">
         <methods>
-          <include name="deleteShift"/>
           <include name="teardown"/>
           <include name="addShift"/>
           <include name="setup"/>

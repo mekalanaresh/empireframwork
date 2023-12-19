@@ -1,6 +1,5 @@
 package com.PageObjects;
 
-
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -44,7 +43,7 @@ public  Shifts addShift() throws Throwable
 public Shifts deleteShift() throws Throwable
 {
 	search.sendKeys(props.getProperty("shiftname"));
-	Delete.click();
+	//Delete.click();
 	yes.click();
 	return new Shifts();
 	
@@ -61,4 +60,3 @@ public Shifts verify() throws Throwable
 	
 }
 }
-
